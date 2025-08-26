@@ -1,7 +1,6 @@
 import cv2
 import numpy as np
 import face_recognition
-from face_recognition import face_distance
 
 # Import and convert imgs from bgr to rgb
 imgElon = face_recognition.load_image_file("ImagesBasic/elon_musk_image.jpg")
