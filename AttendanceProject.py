@@ -46,8 +46,7 @@ while(True):
         matchIndex = np.argmin(distances)
 
         if matches[matchIndex]:
-            name = classNames[matchIndex].upper()
-            y1, x2, y2, x1 = faceLoc
+            name = classNames[matchIndex].upper
             y1, x2, y2, x1 = y1*4, x2*4, y2*4, x1*4
             cv2.rectangle(imageCam, (y1, x2), (y2, x1), (0, 255, 0), 2)
             cv2.rectangle(imageCam, (x1,y2-35), (x2, x2), (0, 255, 0), cv2.FILLED)
